@@ -1,1 +1,93 @@
-/* место для вашего кода */
+/* header */
+
+/* я решил добавить размеры шрифта и насыщенность начертания в .header, 
+так как это общие стили текста для шапки */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.header a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.header__menu {
+  justify-self: start;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 29px;
+  list-style: circle;
+}
+
+.header__links-list-item {
+  padding-left: 4px;
+}
+
+/* Сдесь я использовал :first-child вместо добавления предлагаемого
+ класса .header__links-list-item_no-bullit, чтоб разметка списка выглядела чище */
+
+.header__links-list-item:first-child {
+  padding: 0;
+  list-style: none;
+}
+
+/* Узнал что модификатор нельзяя использовать без базового стиля
+поэтом создаю его для неактивных ссылок */
+
+.header__link {
+  line-height: 1;
+}
+
+.header__link_active {
+  text-decoration: none;
+} 
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.35;
+}
+
+.header__address {   
+  justify-self: end; 
+  width: 240px;
+  max-width: 240px;
+}
+
+/* main */
+
+.main {
+}
+
+.cover {
+  margin-bottom: 180px;
+}
+
+.lots {
+  margin-bottom: 120px;
+}
+
+.about {
+  margin-bottom: 180px;
+}
