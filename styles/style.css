@@ -250,6 +250,8 @@
   font-size: 20px;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+  display: block;
+  width: fit-content;
 }
 
 /* ===== About section ===== */
@@ -302,25 +304,12 @@
   line-height: 24px;
 }
 
-.no-wrap {
-  white-space: nowrap;
-}
-
-.about__text-top {
-  padding-right: 10px;
-}
-
-.about__text-bottom {
-  padding-right: 6px;
-}
-
 /* ===== Footer ===== */
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  min-height: 180px;
-  padding: 0 50px;
+  padding: 0 50px 80px;
   font-size: 18px;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
