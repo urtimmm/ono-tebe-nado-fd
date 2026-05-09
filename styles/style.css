@@ -171,7 +171,7 @@
   cursor: pointer;
 }
 
-/* секция -lots- */
+/* Вторая секция -lots- */
 
 .lots {
   position: relative;
@@ -261,6 +261,64 @@
   text-underline-offset: 4px;
 }
 
+/* Третья секция -about- */
+
 .about {
+  display: flex;
+  justify-content: center;
   margin-bottom: 180px;
+  padding: 0 24px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px minmax(0, 1fr);
+  justify-items: center;
+  align-items: start;
+  gap: 25px;
+  width: 100%;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  margin: 136px 0 100px 0;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.about__text-top {
+  padding-right: 10px;
+}
+
+.about__text-bottom {
+  padding-right: 6px;
 }
