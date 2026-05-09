@@ -115,15 +115,19 @@
 
 /* Выравнивание строк заголовка */
 
-.aligned-text_left {
+.cover__title-line {
+  display: block;
+}
+
+.cover__title-line_align_left {
   align-self: flex-start;
 }
 
-.aligned-text_center {
+.cover__title-line_align_center {
   align-self: center;
 }
 
-.aligned-text_right {
+.cover__title-line_align_right {
   align-self: flex-end;
 }
 
@@ -322,7 +326,7 @@
   text-underline-offset: 4px;
 }
 
-.bottom__address {
+.footer__address {
   width: 265px;
 }
 
