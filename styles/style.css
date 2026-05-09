@@ -1,7 +1,5 @@
-/* header */
 
-/* я решил добавить размеры шрифта и насыщенность начертания в .header, 
-так как это общие стили текста для шапки */
+/* ===== Header ===== */
 
 .header {
   display: grid;
@@ -68,14 +66,14 @@
   width: 240px;
 }
 
-/* main */
+/* ===== Main ===== */
 
 .main {
   display: flex;
   flex-direction: column;
 }
 
-/* Первая секция -cover- */
+/* ===== Cover section ===== */
 
 .cover {
   position: relative;
@@ -109,15 +107,13 @@
   text-transform: uppercase;
 }
 
-/* Решил так компенсировать пространство 
-после последних букв в заголовке, чтоб
-разметка была чище */
+/* Компенсация лишнего отступа из-за letter-spacing */
 
 .cover__title span {
   margin-right: -0.3em;
 }
 
-/* разные выравнивания частей заголовка h1*/
+/* Выравнивание строк заголовка */
 
 .aligned-text_left {
   align-self: flex-start;
@@ -131,7 +127,7 @@
   align-self: flex-end;
 }
 
-/* Контейнер описания и кнопки */
+/* Блок описания и CTA-кнопки */
 
 .cover__description {
   position: relative;
@@ -142,8 +138,6 @@
   color: white;
 }
 
-/* Описание */
-
 .cover__description-text {
   font-weight: 400;
   font-size: 22px;
@@ -152,8 +146,6 @@
   text-transform: uppercase;
   word-spacing: 18.6px;
 }
-
-/* кнопка "Сделать ставку" */
 
 .bet-button {
   border: 1px solid white;
@@ -165,7 +157,7 @@
   cursor: pointer;
 }
 
-/* Вторая секция -lots- */
+/* ===== Lots section ===== */
 
 .lots {
   position: relative;
@@ -256,7 +248,7 @@
   text-underline-offset: 4px;
 }
 
-/* Третья секция -about- */
+/* ===== About section ===== */
 
 .about {
   display: flex;
@@ -318,7 +310,7 @@
   padding-right: 6px;
 }
 
-/* -footer- */
+/* ===== Footer ===== */
 
 .footer {
   display: grid;
@@ -363,5 +355,3 @@
   width: 48px;
   height: 48px;
 }
-
-/* Сделал репозиторий публичным */
