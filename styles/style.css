@@ -48,7 +48,7 @@
   height: 105px;
 }
 
-.header__logo img {
+.header__logo-image {
   display: block;
   width: 100%;
   height: 100%;
@@ -329,14 +329,22 @@
 .footer__menu {
   display: flex;
   justify-self: center;
-   line-height: 21.3px;
+  line-height: 21.3px;
 }
 
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__menu-list-item {
   list-style: none;
+}
+
+.footer__menu-link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .footer__menu-link_active {
@@ -349,6 +357,14 @@
   justify-content: center;
   gap: 48px;
   list-style: none;
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
 }
 
 .footer__social-icon {
