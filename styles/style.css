@@ -322,3 +322,49 @@
 .about__text-bottom {
   padding-right: 6px;
 }
+
+/* -footer- */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 180px;
+  padding: 0 50px;
+  font-size: 18px;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.bottom__address {
+  width: 265px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-self: center;
+   line-height: 21.3px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  justify-content: center;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
